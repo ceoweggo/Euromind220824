@@ -1,0 +1,127 @@
+2024-08-22 09:03:43,175 ERROR: Exception on /explore [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 160, in explore
+    posts = db.paginate (query, page=page, per_page=app.config['POSTS_PER_PAGE'], error_out=False)
+                                                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'POSTS_PER_PAGE'
+2024-08-22 09:03:44,173 ERROR: Exception on /index [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 25, in index
+    posts = db.paginate (current_user.following_posts (), page=page, per_page=app.config['POSTS_PER_PAGE'], error_out=False);
+                                                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'POSTS_PER_PAGE'
+2024-08-22 09:03:45,133 ERROR: Exception on /index [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 25, in index
+    posts = db.paginate (current_user.following_posts (), page=page, per_page=app.config['POSTS_PER_PAGE'], error_out=False);
+                                                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'POSTS_PER_PAGE'
+2024-08-22 09:03:45,747 ERROR: Exception on /index [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 25, in index
+    posts = db.paginate (current_user.following_posts (), page=page, per_page=app.config['POSTS_PER_PAGE'], error_out=False);
+                                                                              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'POSTS_PER_PAGE'
+2024-08-22 09:03:54,771 INFO: Microblog startup [in /home/lasssek/Documents/flaskTest/flaskTest/app/__init__.py:42]
+2024-08-22 09:03:56,363 ERROR: Exception on /index [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 30, in index
+    if posts.has_next else None
+       ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'has_next'
+2024-08-22 09:03:58,969 ERROR: Exception on /index [GET] [in /home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/lib/python3.12/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasssek/Documents/flaskTest/flaskTest/app/routes.py", line 30, in index
+    if posts.has_next else None
+       ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'has_next'
