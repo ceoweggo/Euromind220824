@@ -44,7 +44,7 @@ def login () -> None:
         );
         if user is None or not user.check_password (form.password.data):
             flash ("Invalid username or password");
-            return redirect (url_for ("login"));s
+            return redirect (url_for ("login"));
         login_user (user=user, remember=form.rememberMe.data);
         next_page = request.args.get ("next");
         if not next_page or urlsplit (next_page).netloc != '':
